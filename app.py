@@ -379,7 +379,11 @@ def api_spam():
         "accounts": FR_READY_COUNT,
         "DEV:": AH_BOT,
     })
-
+    
+@app.route('/')
+def home():
+    return "API is running. Use /spam, /stop, or /status."
+    
 @app.route('/stop', methods=['GET'])
 def api_stop():
     if not check_api_key(request):
