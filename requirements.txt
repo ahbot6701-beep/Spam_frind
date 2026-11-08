@@ -1,9 +1,6 @@
-aiohttp
 httpx
 pycryptodome
 PyJWT
 colorama
-protobuf-decoder
 flask
 gunicorn
-requests
